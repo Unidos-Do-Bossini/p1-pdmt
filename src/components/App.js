@@ -1,19 +1,18 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import TarefaEntrada from './TarefaEntrada' 
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
-class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
       <Container>
         <Row>
           <Col>
-            <h1>Hello, Tarefas</h1>
+            <TarefaEntrada/>
           </Col>
         </Row>
       </Container>
     )
   }
 }
-
-export default App
