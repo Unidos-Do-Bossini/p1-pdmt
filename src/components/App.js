@@ -1,18 +1,26 @@
-import React, {Component} from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import TarefaEntrada from './TarefaEntrada' 
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { Component } from 'react';
+import '../styles.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import TarefaEntrada from './TarefaEntrada';
+import TarefaLista from './TarefaLista';
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <Container>
         <Row>
           <Col>
-            <TarefaEntrada/>
+            <TarefaEntrada />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <TarefaLista />
           </Col>
         </Row>
       </Container>
-    )
+    );
   }
 }
+
+export default App;
