@@ -16,8 +16,12 @@ export default class TarefaEntrada extends Component {
 
   onFormSubmit = event => {
     event.preventDefault()
-    this.props.onTarefaAdicionada(this.state.descricao)
-    this.setState({ descricao: '' })
+
+    const { descricao } = this.state
+    if (descricao.trim() !== '') {
+      this.props.onTarefaAdicionada(descricao)
+      this.setState({ descricao: '' })
+    }
   }
 
   render() {
