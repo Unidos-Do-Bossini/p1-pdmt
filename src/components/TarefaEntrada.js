@@ -30,7 +30,7 @@ export default class TarefaEntrada extends Component {
         <h2> </h2>
         <form onSubmit={this.onFormSubmit} className="w-100">
           <span className="p-input-icon-left w-100">
-            <i className="pi pi-pencil"></i>
+            <i className="pi pi-pencil icon"></i>
             <InputText
               value={this.state.descricao}
               onChange={this.onDescricaoAlterada}
